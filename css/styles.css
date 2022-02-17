@@ -17,16 +17,16 @@ a, u {
 }
 .nav {
     padding: 6px;
+    width: calc(100% - 12px);
     height: 3rem;
     background-color: #FFFF;
     display: flex;
     justify-content: flex-end;
     margin: 0;
+    width: calc(100% - 12px);
 }
 .nav-menu {
     display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
     height: 3rem;
     margin: 0;
 }
@@ -39,7 +39,6 @@ a, u {
     line-height: 24px;
     padding-right: 15px; 
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .nav-item {
@@ -77,13 +76,12 @@ a, u {
 /***SEARCH-AREA***/
 .search-bar {
     display: flex;
-    z-index: 3;
     height: 44px;
     background-color: #ffff;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     margin: 30px auto 0;
-    width: auto;
+    width: calc(100% - 60px);
     max-width: 584px;
 }
 .search-bar:hover {
@@ -94,7 +92,7 @@ a, u {
 }
 .search-items {
     position: relative;
-    flex: 1;
+    flex: 100%;
     display: flex;
     padding: 5px 8px 5px 14px;
     align-items: center;
@@ -103,16 +101,17 @@ a, u {
     color: #9aa0a6;
     margin-right: 13px;
 }
+form {
+    display: inline-block;
+    width: 100%;
+}
 .search-form {
     background-color: transparent;
     border: none;
-    margin: 0;
-    padding: 0;
     color: rgba(0,0,0,.87);
     outline: none;
-    display: flex;
     height: 34px;
-    width: 487px;
+    width: calc(100% - 40px);
     font-size: 16px;
 }
 .voice-img {
