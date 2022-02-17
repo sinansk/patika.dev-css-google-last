@@ -170,6 +170,7 @@ form {
 .footer-bottom {
     padding: 0 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: #70757a;
 }
